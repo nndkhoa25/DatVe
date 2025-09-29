@@ -1,12 +1,27 @@
-# React + Vite
+# 🎬 フロントエンド - NekoCinema 映画チケット予約システム
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+このフォルダは **NekoCinema** プロジェクトのフロントエンド部分です。  
+React をベースにしたウェブアプリケーションで、ユーザーは映画を検索・選択し、上映スケジュールや座席を指定してチケットを予約・購入できます。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 使用技術
 
-## Expanding the ESLint configuration
+- **React.js** - UI フレームワーク  
+- **React Router** - ルーティング  
+- **Tailwind CSS** - スタイリング  
+- **Axios** - API 通信  
+- **Context API / Hooks** - 状態管理  
+- **Flowbite** - UI コンポーネント  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 ディレクトリ構成 (例)
+1. リポジトリをクローン  
+   ```bash
+   git clone https://github.com/nndkhoa25/DatVe.git
+   cd DatVe/frontend
+2. 依存関係をインストール
+    npm install
+3. 開発サーバーを起動
+    npm run dev
