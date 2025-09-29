@@ -1,47 +1,61 @@
-# 🎬 NekoCinema
+# 🎬 NekoCinema – オンライン映画チケット予約システム
 
-Ứng dụng web đặt vé xem phim trực tuyến. Người dùng có thể dễ dàng **xem trailer, tra cứu phim đang chiếu, chọn lịch chiếu, đặt vé nhanh chóng và quản lý thông tin vé** ngay trên nền tảng.
+## 📖 プロジェクト概要  
+**NekoCinema** はオンラインで映画チケットを予約できるプラットフォームです。ユーザーは以下の機能を利用できます：  
+- 映画のトレーラーや上映情報を閲覧  
+- ジャンル・上映時間・映画館で映画を検索  
+- 座席を選んでチケットを予約・オンライン決済  
+- マイページで購入済みチケットを管理  
 
----
-
-## 🚀 Tính năng chính
-- 🔍 Xem danh sách **phim đang chiếu** và **phim sắp chiếu**.
-- 📖 Thông tin chi tiết phim: mô tả, thời lượng, độ tuổi, trailer.
-- 🎟️ Đặt vé trực tuyến: chọn suất chiếu, phòng chiếu, ghế ngồi.
-- 🛒 Quản lý vé đã đặt, hủy vé (theo chính sách).
-- 🎁 Trang khuyến mãi & mã giảm giá.
-- 👤 Tài khoản người dùng (đăng nhập / đăng ký / đăng xuất).
-- 🛠️ Chế độ quản trị (quản lý phim, lịch chiếu, phòng chiếu, vé).
-
----
-
-## 🛠️ Công nghệ
-- **Frontend:** React + TailwindCSS
-- **Routing:** React Router
-- **State Management:** Context API / Redux (tùy triển khai)
-- **Backend:** Node.js + Express
-- **Database:** MongoDB
-- **Authentication:** JWT
-- **Payment (demo):** Stripe / VNPay
-- **Triển khai:** Docker / Vercel / Render
+また、**管理者用ダッシュボード** では以下の管理が可能です：  
+- 映画リスト  
+- 上映スケジュール  
+- 上映ホール・座席  
+- 予約済みチケット  
 
 ---
 
-## 📦 Cài đặt & Chạy thử
+## 🚀 主な機能
 
-### Yêu cầu
-- Node.js >= 18
-- MongoDB
-- npm hoặc yarn
+### 👤 一般ユーザー
+- JWT 認証による新規登録・ログイン  
+- 映画リストの閲覧、トレーラーや詳細情報の確認  
+- 映画館・上映時間・座席の選択  
+- 決済機能（デモ：Stripe / VNPay）  
+- マイページで予約履歴を管理  
 
-### Cách chạy
+### 🛠️ 管理者
+- 映画の追加・編集・削除  
+- 上映スケジュールの作成・管理  
+- 上映ホールと座席の管理  
+- 予約状況の確認  
+
+---
+
+## 🏗️ 使用技術
+
+- **フロントエンド**:  
+  - [React.js](https://react.dev/)  
+  - [TailwindCSS](https://tailwindcss.com/)  
+  - [React Router](https://reactrouter.com/)  
+
+- **バックエンド**:  
+  - [Node.js](https://nodejs.org/)  
+  - [Express.js](https://expressjs.com/)  
+  - [MongoDB](https://www.mongodb.com/)  
+  - JWT 認証  
+
+- **決済**: Stripe API / VNPay（デモ）  
+
+- **デプロイ（推奨）**:  
+  - フロントエンド: Vercel  
+  - バックエンド: Render / Docker  
+
+---
+
+## ⚙️ セットアップ & 実行方法
+
+### 1. リポジトリのクローン
 ```bash
-# Clone dự án
-git clone https://github.com/username/nekocinema.git
-cd nekocinema
-
-
-cd ../server
-cp .env.example .env
-yarn install
-yarn dev
+git clone https://github.com/nndkhoa25/DatVe.git
+cd DatVe
