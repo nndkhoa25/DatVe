@@ -1,12 +1,47 @@
-# React + Vite
+# 🎬 NekoCinema
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ứng dụng web đặt vé xem phim trực tuyến. Người dùng có thể dễ dàng **xem trailer, tra cứu phim đang chiếu, chọn lịch chiếu, đặt vé nhanh chóng và quản lý thông tin vé** ngay trên nền tảng.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tính năng chính
+- 🔍 Xem danh sách **phim đang chiếu** và **phim sắp chiếu**.
+- 📖 Thông tin chi tiết phim: mô tả, thời lượng, độ tuổi, trailer.
+- 🎟️ Đặt vé trực tuyến: chọn suất chiếu, phòng chiếu, ghế ngồi.
+- 🛒 Quản lý vé đã đặt, hủy vé (theo chính sách).
+- 🎁 Trang khuyến mãi & mã giảm giá.
+- 👤 Tài khoản người dùng (đăng nhập / đăng ký / đăng xuất).
+- 🛠️ Chế độ quản trị (quản lý phim, lịch chiếu, phòng chiếu, vé).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Công nghệ
+- **Frontend:** React + TailwindCSS
+- **Routing:** React Router
+- **State Management:** Context API / Redux (tùy triển khai)
+- **Backend:** Node.js + Express
+- **Database:** MongoDB
+- **Authentication:** JWT
+- **Payment (demo):** Stripe / VNPay
+- **Triển khai:** Docker / Vercel / Render
+
+---
+
+## 📦 Cài đặt & Chạy thử
+
+### Yêu cầu
+- Node.js >= 18
+- MongoDB
+- npm hoặc yarn
+
+### Cách chạy
+```bash
+# Clone dự án
+git clone https://github.com/username/nekocinema.git
+cd nekocinema
+
+
+cd ../server
+cp .env.example .env
+yarn install
+yarn dev
